@@ -22,6 +22,15 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  /* The background image with clear div:
+
+    background-image: url("/images/muses.jpg");
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+
 }
 blockquote, q {
   quotes: none;
@@ -308,13 +317,13 @@ span.drop-trigger {
 }
 
 
-
 /* HERO */
 
 .full-hero {
   /*background: #6441A5;  */
   background: #000;
   background-size: cover;
+  webkit-mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
   box-sizing: border-box;
   height: 90vh;
 }
@@ -337,22 +346,26 @@ span.drop-trigger {
   color: #fff;
   position: relative;
   text-align: center;
-  text-transform: uppercase;
   top: 50%;
   transform: translate(0,-50%);
+
 }
+
+
 .hero-content h1 {
-  color: rgba(255,255,255,0.8);
-  font-size: 7vw;
+  color: rgba(255,255,255, 1);
+  font-size: 8vw;
   margin-bottom: 0.25em;
+
 }
 .hero-content .social-link {
-  background-color: rgba(255,255,255,0.8);
-  color: #557c83;
+  background-color: #AB50BD;
+  color: #fff;
+
 }
 .hero-content .social-link:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: rgba(255,255,255,0.8);
+  color: #557c83;
 }
 .half-hero {
   background-position: center center;
@@ -360,6 +373,21 @@ span.drop-trigger {
   height: 40vh;
 }
 
+.hero-font h1 {
+  font-family: 'Yesteryear', cursive;
+}
+
+.hero-font h2 {
+  text-shadow: 1px 0 0
+}
+
+/*
+.hero-font h2 {
+font-family: 'Yesteryear', cursive;
+font-size: 3vw;
+color: #AB50BD;
+}
+*/
 
 /* HOME PAGE */
 
@@ -377,7 +405,7 @@ span.drop-trigger {
   background-color: #000;
   color: #fff;
   display: flex;
-  padding: 7vh 0;
+  padding: 9vh 0;
 }
 .home-callout h3 {
   color: inherit;
@@ -385,7 +413,7 @@ span.drop-trigger {
 }
 .callout-title {
   flex: 1;
-  font-size: 5.75vw;
+  font-size: 5vw;
   text-align: right;
   text-transform: uppercase;
 }
