@@ -272,9 +272,10 @@ span.drop-trigger {
   width: 50px;
 }
 .footer h3 {
+  font-family: 'Yesteryear', cursive;
+  font-size: 1.75em;
   color: #fff;
-  padding-top: 1.5em;
-  text-transform: uppercase;
+  padding-top: 1.25em;
 }
 .footer h3 span {
   color: #aaa;
@@ -421,7 +422,7 @@ span.drop-trigger {
 .callout-copy {
   font-size: 0.8rem;
   flex: 0 0 50%;
-  max-width: 600px;
+  max-width: 525px;
   padding: 0 3vw;
 }
 
